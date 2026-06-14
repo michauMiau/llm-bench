@@ -12,19 +12,16 @@ This project evaluates how well different LLMs can:
 - **Self-validate output** — detecting and fixing errors before delivery
 
 Each test consists of a single prompt describing a complete application. The LLM generates the entire project in one go, which is then tested for correctness, functionality, and completeness.
+### Prompt v2
 
-## Prompts
-
-### Prompt v1: WebXR Physics Sandbox Game
-
-A complex game specification requiring physics-based interactions, weapon systems, enemy AI, and VR controller support — all implemented as a single HTML file playable on Quest 2 browser.
+A complex game specification requiring physics-based interactions, weapon systems, enemy AI, and VR controller support — all implemented as a single HTML file.
 
 ```
 Create a WebXR physics sandbox game, similar to games like BONEWORKS and BONELAB. The testing chamber where the player is should feature several props like desks, chair, bullseye target to aim and shoot at, ladder located on a wall that the player can climb, buttons that spawn enemies and breakable crates and weapons
 
 The weapons should be: 2 Different Rifles, Submachine Gun, Pistol and a Special Gun that features a special ability, that can be physics related, but is not limited to it. All weapons should feature the appropriate magazines that go with them, the weapons have to be physics based, they can be grabbed at the appropriate spot to shoot them, along with a second spot that can be grabbed that minimizes the recoil the weapon has and also makes it easier to aim, the reloading action cannot be automatically done, the player has to take the appropriate magazine for the gun, and insert it into the appropriate slot, then the player has to pull the reloading mechanism for the gun to be able to shoot
 
-The player rig also has to be physics based, the arms must move realistically to the position where the hands are, the hand must be an actual physics object that can move things, have all 5 fingers that can be moved, the locomotion can be done by a locomotion ball, but it doesn't have to be, the player has to always be upright, the player can also crouch by crouching in real life, on the waist there should be an ammo holster that the player can grab ammo from, the ammo type is automatically chosen from the weapon the player is holding or the latest weapon the player held
+The player rig also has to be physics based, the arms must move realistically to the position where the hands are, the hand must be an actual physics object that can move things, have all 5 fingers that can be moved, the locomotion can be done by a locomotion ball, but it doesn't have to be, the player has to always be upright, the player can also crouch by crouching in real life, on the waist there should be an ammo holster that the player can grab ammo from, the ammo type is automatically chosen from the weapon the player is holding or the latest weapon the player held. The player can also climb ladders and pull themselves up
 
 The physics need to have sounds, if a weapon is dropped the appropriate sound has to be made, things like impacts have to have the appropriate particles along with sounds that differ depending on the object's material
 
