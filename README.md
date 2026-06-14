@@ -12,7 +12,7 @@ This project evaluates how well different LLMs can:
 - **Self-validate output** — detecting and fixing errors before delivery
 
 Each test consists of a single prompt describing a complete application. The LLM generates the entire project in one go, which is then tested for correctness, functionality, and completeness.
-### Prompt v2
+### Prompt v3
 
 A complex game specification requiring physics-based interactions, weapon systems, enemy AI, and VR controller support — all implemented as a single HTML file.
 
@@ -39,7 +39,7 @@ The controls (based on Quest 2 controllers) should be:
 - Grip buttons: Grab objects
 
 The player has limited strength — they cannot move a crate with one hand alone. Holding a heavy gun with only one hand results in wobbling and increased recoil; gripping the second part of the gun limits recoil, reduces wobbling, and improves maneuverability
-
+You are free to use any libraries you want, like A-Frame, as long as they are not using any JS runner like node, it has to be standalone.
 The game should be playable on Quest 2 using the built-in Chromium-based web browser. The entire game must fit into a single HTML file — test for JavaScript errors before finishing
 ```
 
