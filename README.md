@@ -6,12 +6,14 @@ Tests LLM capabilities through complex creative tasks — generating self-contai
 ## Overview
 
 This project evaluates how well different LLMs can:
+
 - **Understand complex specifications** — translating detailed requirements into working code
 - **Generate coherent, functional programs** — without hallucinating APIs or inventing non-existent libraries
 - **Handle large contexts** — maintaining consistency across thousands of lines of generated code
 - **Self-validate output** — detecting and fixing errors before delivery
 
 Each test consists of a single prompt describing a complete application. The LLM generates the entire project in one go, which is then tested for correctness, functionality, and completeness.
+
 ### Prompt v3
 
 A complex game specification requiring physics-based interactions, weapon systems, enemy AI, and VR controller support — all implemented as a single HTML file.
@@ -48,7 +50,7 @@ The game should be playable on Quest 2 using the built-in Chromium-based web bro
 Each LLM output is scored based on:
 
 | Criterion | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | **Code Quality** | Clean, well-structured code without obvious bugs or dead imports |
 | **Completeness** | All features from the prompt are implemented (weapons, enemies, physics, etc.) |
 | **Functionality** | The generated game actually runs and is playable |
